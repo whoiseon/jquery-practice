@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  const $clock = $("#clock");
+$(function () {
+  const $clock = $('#clock');
 
   function paintClock() {
     const date = new Date();
@@ -9,9 +9,9 @@ $(document).ready(function () {
     $clock.text(`${padStartZero(hours)}:${padStartZero(minutes)}`);
   }
 
-  function padStartZero(number) {
-    const numberToString = String(number);
-    return numberToString.padStart(2, "0");
+  function padStartZero(date: number) {
+    const numberToString = String(date);
+    return `${numberToString.length === 1 ? '0' : ''}${numberToString}`;
   }
 
   paintClock();
