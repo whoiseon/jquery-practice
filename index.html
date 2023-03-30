@@ -15,13 +15,16 @@
     <input class="login-input" type="text" placeholder="What is your name?" maxlength="15" required />
     <button class="login-button" type="submit">Log In</button>
   </form>
-  <h1 id="clock">00:00</h1>
-  <h2 class="greeting hidden"></h2>
-  <div id="quote">
-    <span></span>
-    <span></span>
+  <div id='center' class='hide-overlay'>
+    <h1 id="clock">00:00</h1>
+    <h2 class="greeting hidden"></h2>
+    <div id="quote">
+      <p></p>
+      <p></p>
+    </div>
   </div>
 </div>
+<script src='./dist/lib/common.js'></script>
 <script src='./dist/lib/greetings.js'></script>
 <script src='./dist/lib/clock.js'></script>
 <script src='./dist/lib/quotes.js'></script>

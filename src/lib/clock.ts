@@ -15,5 +15,5 @@ $(function () {
   }
 
   paintClock();
-  setInterval(paintClock, 1000 * 60);
+  setInterval(paintClock, 1000);
 });

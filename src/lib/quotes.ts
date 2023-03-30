@@ -47,13 +47,13 @@ const quotes: QuotesMap = [
 ];
 
 $(function () {
-  const $quote = $('#quote span:first-child');
-  const $author = $('#quote span:last-child');
+  const $quote = $('#quote p:first-child');
+  const $author = $('#quote p:last-child');
 
   function getRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const { quote, author } = quotes[randomIndex];
-    $quote.text(quote);
+    $quote.text(`"${quote}"`);
     $author.text(author);
   }
 
