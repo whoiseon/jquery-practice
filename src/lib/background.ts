@@ -4,7 +4,9 @@ $(function () {
   const bgImage = $(
     `<img class='background' src="/images/${chosenImage}" alt="background" />`,
   );
+  const bgOverlay = $('<div class="background-overlay"></div>');
   const $root = $('#root');
 
+  $($root).append(bgOverlay);
   $($root).append(bgImage);
 });
