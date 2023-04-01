@@ -35,21 +35,6 @@ h1, h2, p, span {
   color: white;
 }
 
-#login-form input {
-  background: none;
-  border: none;
-  width: 100%;
-  color: white;
-  border-bottom: 2px solid white;
-  font-size: 36px;
-  padding-bottom: 8px;
-  text-align: center;
-}
-
-#login-form input:focus {
-  outline: none;
-}
-
 #clock {
   font-size: 168px;
   color: white;
@@ -78,6 +63,19 @@ h1, h2, p, span {
   transition: opacity 0.5s ease-in-out;
 }
 
+#todo-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 72px;
+}
+
+#todo-form h2 {
+  font-size: 36px;
+  color: white;
+}
+
 .greeting {
   font-size: 54px;
   color: white;
@@ -85,6 +83,21 @@ h1, h2, p, span {
 
 .hidden {
   display: none !important;
+}
+
+.underline-input {
+  background: none;
+  border: none;
+  width: 100%;
+  color: white;
+  border-bottom: 2px solid white;
+  font-size: 36px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.underline-input:focus {
+  outline: none;
 }
 
 .background {
