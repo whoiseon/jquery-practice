@@ -82,6 +82,13 @@ ul, li {
   color: white;
 }
 
+#weather {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: white;
+}
+
 .greeting {
   font-size: 54px;
   color: white;
