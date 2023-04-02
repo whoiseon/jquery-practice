@@ -1,7 +1,8 @@
 $(function () {
   const $loginForm = $('#login-form');
-  const $loginInput = $('.login-input');
+  const $loginInput = $('#login-form input');
   const $greeting = $('.greeting');
+  const $todoForm = $('#todo-form');
 
   const HIDDEN_CLASSNAME = 'hidden';
   const USERNAME_KEY = 'username';
@@ -21,6 +22,7 @@ $(function () {
     $greeting
       .text(`${getGreetings()}, ${username}`)
       .removeClass(HIDDEN_CLASSNAME);
+    $todoForm.removeClass(HIDDEN_CLASSNAME);
   }
 
   function getGreetings() {
